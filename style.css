@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(89, 0, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#character-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.character-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: calc(33.333% - 40px); /* Três colunas */
+    max-width: 300px;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.character-card h2, .character-card p {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.character-card h2 {
+    font-size: 18px;
+}
+
+.character-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
